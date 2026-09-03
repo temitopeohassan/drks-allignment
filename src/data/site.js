@@ -4,11 +4,17 @@ export const company = {
   founded: "[YEAR]",
   headquarters: "[CITY, STATE]",
   serviceArea: "[SERVICE AREA]",
-  email: "[EMAIL]",
-  phone: "[PHONE]",
+  address: "[ADDRESS]",
+  email: "info@drks-allignment-llc.com",
+  phone: "[PHONE NUMBER]",
   positioning:
     "A strategic consulting and alignment partner helping organizations turn strategy into coordinated execution and measurable results.",
 };
+
+export const socialLinks = [
+  { label: "Facebook", url: "[FACEBOOK URL]", icon: "facebook" },
+  { label: "LinkedIn", url: "[LINKEDIN URL]", icon: "linkedin" },
+];
 
 export const governmentData = {
   uei: "[VERIFY]",
@@ -22,9 +28,46 @@ export const governmentData = {
 export const navigation = [
   { label: "Home", path: "/" },
   { label: "For Partners", path: "/partners" },
-  { label: "About", path: "/about" },
+  {
+    label: "About",
+    path: "/about",
+    children: [
+      { label: "Who We Are", path: "/about/who-we-are" },
+      { label: "Mission Statement", path: "/about/mission-statement" },
+      { label: "About CEO", path: "/about/ceo" },
+    ],
+  },
   { label: "For Government Buyers", path: "/government" },
-  { label: "Capabilities", path: "/capabilities" },
+  {
+    label: "Capabilities",
+    path: "/capabilities",
+    children: [
+      {
+        label: "Professional & Administrative Support",
+        path: "/capabilities/professional-administrative-support",
+      },
+      {
+        label: "Healthcare & Medical Services",
+        path: "/capabilities/healthcare-medical-services",
+      },
+      {
+        label: "Information Technology Solutions",
+        path: "/capabilities/information-technology-solutions",
+      },
+      {
+        label: "Professional Development Services",
+        path: "/capabilities/professional-development-services",
+      },
+      {
+        label: "Facilities, Operations & Maintenance",
+        path: "/capabilities/facilities-operations-maintenance",
+      },
+      {
+        label: "Medical & Surgical Device Supply",
+        path: "/capabilities/medical-surgical-device-supply",
+      },
+    ],
+  },
   { label: "Insights", path: "/insights" },
   { label: "Careers", path: "/careers" },
 ];
@@ -40,10 +83,16 @@ export const quickLinks = [
 
 export const additionalLinks = [
   { label: "Who We Are", path: "/about/who-we-are" },
-  { label: "Mission & Values", path: "/about/mission-values" },
-  { label: "Leadership", path: "/about/leadership" },
-  { label: "Strategic Consulting", path: "/capabilities/strategic-consulting" },
-  { label: "Organizational Alignment", path: "/capabilities/organizational-alignment" },
+  { label: "Mission Statement", path: "/about/mission-statement" },
+  { label: "About CEO", path: "/about/ceo" },
+  {
+    label: "Professional & Administrative Support",
+    path: "/capabilities/professional-administrative-support",
+  },
+  {
+    label: "Healthcare & Medical Services",
+    path: "/capabilities/healthcare-medical-services",
+  },
   { label: "Insights", path: "/insights" },
   { label: "Careers", path: "/careers" },
 ];

@@ -3,6 +3,67 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/drks-logo.jpeg";
 import { navigation } from "../data/site";
 
+function NavItem({ item }) {
+  const [subOpen, setSubOpen] = useState(false);
+
+  if (!item.children) {
+    return (
+      <NavLink
+        to={item.path}
+        end={item.path === "/"}
+        className={({ isActive }) =>
+          isActive ? "nav__link is-active" : "nav__link"
+        }
+      >
+        {item.label}
+      </NavLink>
+    );
+  }
+
+  return (
+    <div
+      className={subOpen ? "nav__item nav__item--dropdown is-open" : "nav__item nav__item--dropdown"}
+      onMouseEnter={() => setSubOpen(true)}
+      onMouseLeave={() => setSubOpen(false)}
+    >
+      <div className="nav__link-row">
+        <NavLink
+          to={item.path}
+          className={({ isActive }) =>
+            isActive ? "nav__link is-active" : "nav__link"
+          }
+        >
+          {item.label}
+        </NavLink>
+        <button
+          type="button"
+          className="nav__caret"
+          aria-expanded={subOpen}
+          aria-label={`${subOpen ? "Close" : "Open"} ${item.label} submenu`}
+          onClick={() => setSubOpen((value) => !value)}
+        >
+          <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          </svg>
+        </button>
+      </div>
+      <div className="nav__submenu">
+        {item.children.map((child) => (
+          <NavLink
+            key={child.path}
+            to={child.path}
+            className={({ isActive }) =>
+              isActive ? "nav__sublink is-active" : "nav__sublink"
+            }
+          >
+            {child.label}
+          </NavLink>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
@@ -45,16 +106,7 @@ export default function Header() {
           aria-label="Primary"
         >
           {navigation.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              end={item.path === "/"}
-              className={({ isActive }) =>
-                isActive ? "nav__link is-active" : "nav__link"
-              }
-            >
-              {item.label}
-            </NavLink>
+            <NavItem key={item.path} item={item} />
           ))}
           <Link to="/contact" className="btn btn--navy nav__cta">
             Start a conversation

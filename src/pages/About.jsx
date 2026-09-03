@@ -47,14 +47,14 @@ export function AboutIndex() {
             <p>How the firm works, who we serve and what an engagement looks like.</p>
             <span className="cap-card__more">Read more</span>
           </Link>
-          <Link to="/about/mission-values" className="cap-card">
-            <h3>Mission &amp; values</h3>
+          <Link to="/about/mission-statement" className="cap-card">
+            <h3>Mission statement</h3>
             <p>The commitments that govern how we take on and deliver work.</p>
             <span className="cap-card__more">Read more</span>
           </Link>
-          <Link to="/about/leadership" className="cap-card">
-            <h3>Leadership</h3>
-            <p>The people accountable for delivery on every engagement.</p>
+          <Link to="/about/ceo" className="cap-card">
+            <h3>About CEO</h3>
+            <p>The person accountable for delivery on every engagement.</p>
             <span className="cap-card__more">Read more</span>
           </Link>
         </div>
@@ -135,17 +135,17 @@ export function WhoWeAre() {
   );
 }
 
-export function MissionValues() {
+export function MissionStatement() {
   return (
     <>
       <Seo
-        title="Mission & Values | DRKS Alignment LLC"
+        title="Mission Statement | DRKS Alignment LLC"
         description="The commitments that govern how DRKS Alignment LLC takes on and delivers work."
       />
       <PageHead
         crumb={
           <>
-            <Link to="/about">About</Link> / Mission &amp; values
+            <Link to="/about">About</Link> / Mission statement
           </>
         }
         title="Our mission is narrow on purpose."
@@ -182,21 +182,21 @@ export function MissionValues() {
   );
 }
 
-export function Leadership() {
+export function AboutCeo() {
   return (
     <>
       <Seo
-        title="Leadership | DRKS Alignment LLC"
-        description="Leadership of DRKS Alignment LLC."
+        title="About CEO | DRKS Alignment LLC"
+        description="The CEO of DRKS Alignment LLC."
       />
       <PageHead
         crumb={
           <>
-            <Link to="/about">About</Link> / Leadership
+            <Link to="/about">About</Link> / About CEO
           </>
         }
-        title="The people accountable for delivery."
-        intro="Leadership names, biographies, credentials and photographs must be supplied and verified before publication."
+        title="The person accountable for delivery."
+        intro="CEO name, biography, credentials and photograph must be supplied and verified before publication."
       />
       <section className="section">
         <div className="shell">

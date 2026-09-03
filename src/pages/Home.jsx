@@ -163,8 +163,8 @@ export default function Home() {
               Leadership names, biographies, credentials and photographs are
               supplied by DRKS and published only after verification.
             </p>
-            <Link to="/about/leadership" className="btn btn--outline">
-              Meet the leadership
+            <Link to="/about/ceo" className="btn btn--outline">
+              Meet the CEO
             </Link>
           </div>
           <div className="leader">

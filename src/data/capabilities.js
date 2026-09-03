@@ -1,49 +1,5 @@
 export const capabilities = [
   {
-    slug: "strategic-consulting",
-    name: "Strategic Consulting",
-    headline: "Turn Complexity Into Strategic Clarity.",
-    description:
-      "Help leaders define priorities, evaluate challenges and create practical strategies that can be translated into action.",
-    services: [
-      "Strategic planning",
-      "Organizational assessments",
-      "Business and operational strategy",
-      "Strategic roadmaps",
-      "Performance planning",
-    ],
-    detail:
-      "Most organizations do not lack ideas. They lack an agreed answer to what matters most, in what order and at what cost. We work with leadership teams to assess the current position, weigh trade-offs honestly and set a direction that the organization can actually carry out.",
-    approach: [
-      "Understand the operating environment, constraints and leadership intent.",
-      "Assess where current activity supports the direction and where it does not.",
-      "Set priorities, sequencing and the measures that define progress.",
-      "Document a roadmap the organization can hand to the people delivering it.",
-    ],
-  },
-  {
-    slug: "organizational-alignment",
-    name: "Organizational Alignment",
-    headline: "Bring People, Priorities and Processes Into Alignment.",
-    description:
-      "Connect leadership priorities with people, processes, resources and execution.",
-    services: [
-      "Organizational alignment",
-      "Change-management support",
-      "Workflow alignment",
-      "Performance frameworks",
-      "Cross-functional coordination",
-    ],
-    detail:
-      "Strategy stalls in the space between the leadership team and the people delivering the work. We find those disconnects, name them plainly and rebuild the links between priorities, roles, workflows and measures.",
-    approach: [
-      "Map how priorities travel from leadership through to daily work.",
-      "Identify where ownership, handoffs or incentives break down.",
-      "Rebuild workflows and performance measures around the agreed direction.",
-      "Support teams through the change so new ways of working hold.",
-    ],
-  },
-  {
     slug: "professional-administrative-support",
     name: "Professional & Administrative Support",
     headline: "Extend Organizational Capacity.",
@@ -66,52 +22,52 @@ export const capabilities = [
     ],
   },
   {
-    slug: "program-project-management",
-    name: "Program & Project Management",
-    headline: "Move Initiatives From Plan to Execution.",
+    slug: "healthcare-medical-services",
+    name: "Healthcare & Medical Services",
+    headline: "Support Care Delivery With Reliable Capacity.",
     description:
-      "Support planning, coordination, implementation, monitoring and reporting.",
+      "Provide healthcare and medical support services that help clinical and administrative teams operate reliably and stay in compliance.",
     services: [
-      "Program coordination",
-      "Project planning",
-      "Implementation support",
-      "Progress monitoring",
-      "Reporting",
+      "Clinical support staffing",
+      "Medical administrative support",
+      "Case management support",
+      "Health program coordination",
+      "Compliance and quality support",
     ],
     detail:
-      "An initiative needs someone accountable for the schedule, the dependencies and the reporting. We provide that discipline, whether the work is a single project or a portfolio of related efforts.",
+      "Healthcare organizations run on capacity they don't always have in-house — clinical coverage, administrative throughput, program coordination. We provide qualified personnel and structured support so care delivery and compliance obligations are met without disruption.",
     approach: [
-      "Build the plan: scope, milestones, dependencies and risks.",
-      "Coordinate the teams, vendors and stakeholders involved.",
-      "Track progress against milestones and surface issues early.",
-      "Report in a form leadership and oversight bodies can use.",
+      "Understand the care setting, staffing model and compliance requirements.",
+      "Source and place qualified clinical and administrative personnel.",
+      "Support day-to-day coordination across care and administrative teams.",
+      "Track quality, compliance and staffing performance against standards.",
     ],
   },
   {
-    slug: "operations-improvement",
-    name: "Operations Improvement",
-    headline: "Make the Organization Work Better.",
+    slug: "information-technology-solutions",
+    name: "Information Technology Solutions",
+    headline: "Modernize Systems Without Disrupting Operations.",
     description:
-      "Identify operational friction, strengthen processes and improve execution.",
+      "Deliver IT solutions that strengthen infrastructure, systems and support without slowing the organization down.",
     services: [
-      "Process assessment",
-      "Workflow improvement",
-      "Operational efficiency",
-      "Performance measurement",
-      "Continuous improvement",
+      "IT support and help desk",
+      "Systems administration",
+      "Network and infrastructure support",
+      "Cybersecurity support",
+      "Software and systems implementation",
     ],
     detail:
-      "Friction accumulates quietly: duplicated approvals, unclear handoffs, manual work that outlived its reason. We assess how work actually moves, then rebuild the steps that cost the most time and cause the most rework.",
+      "Technology should reduce friction, not add to it. We provide the support, administration and implementation capacity organizations need to keep systems secure, current and running, whether that means day-to-day help desk coverage or a defined implementation project.",
     approach: [
-      "Document the process as it runs today, not as it is written down.",
-      "Quantify where time, cost and rework concentrate.",
-      "Redesign the workflow and agree the measures that prove it improved.",
-      "Establish a review rhythm so gains hold after we leave.",
+      "Assess the current systems, support model and risk exposure.",
+      "Stand up support, security and administration coverage.",
+      "Implement or upgrade systems against an agreed plan and timeline.",
+      "Document configurations and transfer knowledge to internal owners.",
     ],
   },
   {
-    slug: "training-development",
-    name: "Professional Development & Training",
+    slug: "professional-development-services",
+    name: "Professional Development Services",
     headline: "Build Capability That Lasts.",
     description:
       "Strengthen workforce capabilities through practical training, professional development and knowledge transfer.",
@@ -129,6 +85,50 @@ export const capabilities = [
       "Design training around the organization's own scenarios and tools.",
       "Deliver sessions to teams and leaders at the right level.",
       "Transfer materials, guides and facilitation notes to internal owners.",
+    ],
+  },
+  {
+    slug: "facilities-operations-maintenance",
+    name: "Facilities, Operations & Maintenance",
+    headline: "Keep Facilities Running Safely and Efficiently.",
+    description:
+      "Provide facilities, operations and maintenance support that keeps physical environments safe, compliant and running.",
+    services: [
+      "Facilities management",
+      "Preventive and corrective maintenance",
+      "Operations support",
+      "Safety and compliance support",
+      "Vendor and contractor coordination",
+    ],
+    detail:
+      "Facilities work fails quietly until it doesn't: deferred maintenance, missed inspections, unclear ownership of building systems. We provide the operational discipline that keeps facilities safe, compliant and functioning, and coordinate the vendors and contractors that support them.",
+    approach: [
+      "Assess facility condition, maintenance history and compliance status.",
+      "Establish preventive maintenance schedules and service standards.",
+      "Coordinate operations, vendors and contractors against those standards.",
+      "Report facility condition and compliance status on a set cadence.",
+    ],
+  },
+  {
+    slug: "medical-surgical-device-supply",
+    name: "Medical & Surgical Device Supply",
+    headline: "Reliable Supply for Medical and Surgical Devices.",
+    description:
+      "Support the sourcing, supply and distribution of medical and surgical devices and equipment.",
+    services: [
+      "Medical and surgical device supply",
+      "Equipment sourcing",
+      "Inventory and logistics coordination",
+      "Vendor management",
+      "Quality and compliance documentation",
+    ],
+    detail:
+      "Care delivery depends on the right devices being available, documented and compliant. We support sourcing, inventory and vendor coordination so medical and surgical supply lines stay reliable and audit-ready.",
+    approach: [
+      "Confirm device and equipment requirements against clinical need.",
+      "Source qualified vendors and manage procurement and inventory.",
+      "Coordinate logistics so supply is available where and when needed.",
+      "Maintain quality and compliance documentation for every order.",
     ],
   },
 ];

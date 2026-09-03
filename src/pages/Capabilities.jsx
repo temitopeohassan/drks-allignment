@@ -11,7 +11,7 @@ export function CapabilitiesIndex() {
     <>
       <Seo
         title="Capabilities | DRKS Alignment LLC"
-        description="Strategic consulting, organizational alignment, professional and administrative support, program and project management, operations improvement and professional development."
+        description="Professional and administrative support, healthcare and medical services, information technology solutions, professional development services, facilities and operations, and medical and surgical device supply."
       />
       <PageHead
         crumb="Capabilities"

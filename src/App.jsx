@@ -10,7 +10,7 @@ import Insights from "./pages/Insights";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import { AboutIndex, WhoWeAre, MissionValues, Leadership } from "./pages/About";
+import { AboutIndex, WhoWeAre, MissionStatement, AboutCeo } from "./pages/About";
 import { CapabilitiesIndex, CapabilityDetail } from "./pages/Capabilities";
 
 export default function App() {
@@ -26,8 +26,8 @@ export default function App() {
           <Route path="/partners" element={<Partners />} />
           <Route path="/about" element={<AboutIndex />} />
           <Route path="/about/who-we-are" element={<WhoWeAre />} />
-          <Route path="/about/mission-values" element={<MissionValues />} />
-          <Route path="/about/leadership" element={<Leadership />} />
+          <Route path="/about/mission-statement" element={<MissionStatement />} />
+          <Route path="/about/ceo" element={<AboutCeo />} />
           <Route path="/government" element={<Government />} />
           <Route path="/capabilities" element={<CapabilitiesIndex />} />
           <Route path="/capabilities/:slug" element={<CapabilityDetail />} />

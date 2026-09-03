@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/drks-logo.jpeg";
-import { additionalLinks, company, quickLinks } from "../data/site";
+import { additionalLinks, company, quickLinks, socialLinks } from "../data/site";
+import { PinIcon, PhoneIcon, MailIcon, FacebookIcon, LinkedInIcon } from "./Icons";
+
+const socialIcons = {
+  facebook: FacebookIcon,
+  linkedin: LinkedInIcon,
+};
+
+const isPending = (value) => typeof value === "string" && value.startsWith("[");
 
 export default function Footer() {
   return (
@@ -49,20 +57,47 @@ export default function Footer() {
 
           <div className="footer-col">
             <h4>Contact</h4>
-            <dl className="footer-contact">
-              <dt>Headquarters</dt>
-              <dd>{company.headquarters}</dd>
-              <dt>Service area</dt>
-              <dd>{company.serviceArea}</dd>
-              <dt>Email</dt>
-              <dd>
+            <ul className="footer-contact-list">
+              <li>
+                <PinIcon className="footer-icon" />
+                <span className={isPending(company.address) ? "pending" : undefined}>
+                  {company.address}
+                </span>
+              </li>
+              <li>
+                <PhoneIcon className="footer-icon" />
+                {isPending(company.phone) ? (
+                  <span className="pending">{company.phone}</span>
+                ) : (
+                  <a href={`tel:${company.phone}`}>{company.phone}</a>
+                )}
+              </li>
+              <li>
+                <MailIcon className="footer-icon" />
                 <a href={`mailto:${company.email}`}>{company.email}</a>
-              </dd>
-              <dt>Phone</dt>
-              <dd>
-                <a href={`tel:${company.phone}`}>{company.phone}</a>
-              </dd>
-            </dl>
+              </li>
+            </ul>
+
+            <div className="footer-social">
+              {socialLinks.map((social) => {
+                const Icon = socialIcons[social.icon];
+                const pending = isPending(social.url);
+                return (
+                  <a
+                    key={social.label}
+                    href={pending ? "#" : social.url}
+                    className={pending ? "footer-social__link is-pending" : "footer-social__link"}
+                    aria-label={`DRKS Alignment LLC on ${social.label}`}
+                    title={pending ? `${social.label}: ${social.url}` : social.label}
+                    target={pending ? undefined : "_blank"}
+                    rel={pending ? undefined : "noreferrer"}
+                  >
+                    <Icon />
+                  </a>
+                );
+              })}
+            </div>
+
             <p style={{ marginTop: 22 }}>
               <Link to="/contact" className="btn btn--gold">
                 Start a conversation

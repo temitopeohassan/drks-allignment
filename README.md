@@ -25,8 +25,8 @@ src/
 
 ## Routes
 
-`/` · `/partners` · `/about` · `/about/who-we-are` · `/about/mission-values` ·
-`/about/leadership` · `/government` · `/capabilities` · `/capabilities/:slug` ·
+`/` · `/partners` · `/about` · `/about/who-we-are` · `/about/mission-statement` ·
+`/about/ceo` · `/government` · `/capabilities` · `/capabilities/:slug` ·
 `/insights` · `/careers` · `/contact`
 
 Capability detail pages are generated from `src/data/capabilities.js`. Add an
