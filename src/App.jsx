@@ -4,14 +4,16 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollReveal from "./components/ScrollReveal";
 import Home from "./pages/Home";
-import Partners from "./pages/Partners";
-import Government from "./pages/Government";
-import Insights from "./pages/Insights";
-import Careers from "./pages/Careers";
+import WhoWeAre, { Leadership } from "./pages/WhoWeAre";
+import ClientsAndPartners from "./pages/ClientsAndPartners";
+import ContractVehicles from "./pages/ContractVehicles";
+import Community from "./pages/Community";
+import { WhatWeDoIndex, ServiceDetail } from "./pages/WhatWeDo";
+import { OurImpactIndex, CaseStudyDetail } from "./pages/OurImpact";
+import JoinOurTeam from "./pages/JoinOurTeam";
 import Contact from "./pages/Contact";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
-import { AboutIndex, WhoWeAre, MissionStatement, AboutCeo } from "./pages/About";
-import { CapabilitiesIndex, CapabilityDetail } from "./pages/Capabilities";
 
 export default function App() {
   return (
@@ -23,17 +25,18 @@ export default function App() {
       <main id="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/about" element={<AboutIndex />} />
-          <Route path="/about/who-we-are" element={<WhoWeAre />} />
-          <Route path="/about/mission-statement" element={<MissionStatement />} />
-          <Route path="/about/ceo" element={<AboutCeo />} />
-          <Route path="/government" element={<Government />} />
-          <Route path="/capabilities" element={<CapabilitiesIndex />} />
-          <Route path="/capabilities/:slug" element={<CapabilityDetail />} />
-          <Route path="/insights" element={<Insights />} />
-          <Route path="/careers" element={<Careers />} />
+          <Route path="/what-we-do" element={<WhatWeDoIndex />} />
+          <Route path="/what-we-do/:slug" element={<ServiceDetail />} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
+          <Route path="/who-we-are/leadership" element={<Leadership />} />
+          <Route path="/who-we-are/clients-and-partners" element={<ClientsAndPartners />} />
+          <Route path="/who-we-are/contract-vehicles" element={<ContractVehicles />} />
+          <Route path="/who-we-are/community" element={<Community />} />
+          <Route path="/our-impact" element={<OurImpactIndex />} />
+          <Route path="/our-impact/:slug" element={<CaseStudyDetail />} />
+          <Route path="/join-our-team" element={<JoinOurTeam />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms-service" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

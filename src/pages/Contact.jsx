@@ -8,7 +8,7 @@ const initialValues = {
   name: "",
   email: "",
   organization: "",
-  inquiryType: "Corporate or institutional",
+  inquiryType: "Federal health agency",
   message: "",
 };
 
@@ -47,12 +47,12 @@ export default function Contact() {
     <>
       <Seo
         title="Contact | DRKS Alignment LLC"
-        description="Contact DRKS Alignment LLC to discuss a requirement, a partnership or a strategic engagement."
+        description="Contact DRKS Alignment LLC to discuss a requirement, a partnership or a project."
       />
       <PageHead
         crumb="Contact"
-        title="Start a conversation."
-        intro="Tell us what you are trying to move forward and who needs to be aligned around it. We reply within two business days."
+        title="Let's talk about your audience."
+        intro="Tell us what you are trying to communicate, build or research, and who it needs to reach. We reply within two business days."
       />
 
       <section className="section">
@@ -120,11 +120,13 @@ export default function Contact() {
                   value={values.inquiryType}
                   onChange={update("inquiryType")}
                 >
-                  <option>Corporate or institutional</option>
-                  <option>Government requirement</option>
+                  <option>Federal health agency</option>
+                  <option>Healthcare or public health organization</option>
+                  <option>Nonprofit or foundation</option>
+                  <option>Science or research organization</option>
                   <option>Teaming or subcontracting</option>
-                  <option>Capability statement request</option>
                   <option>Careers</option>
+                  <option>Other</option>
                 </select>
               </div>
 

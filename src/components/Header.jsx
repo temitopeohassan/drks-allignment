@@ -109,7 +109,7 @@ export default function Header() {
             <NavItem key={item.path} item={item} />
           ))}
           <Link to="/contact" className="btn btn--navy nav__cta">
-            Start a conversation
+            Contact Us
           </Link>
         </nav>
       </div>

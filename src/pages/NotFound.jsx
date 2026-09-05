@@ -13,20 +13,20 @@ export default function NotFound() {
       />
       <section className="section">
         <div className="shell grid-3">
-          <Link to="/capabilities" className="cap-card">
-            <h3>Capabilities</h3>
-            <p>Six practice areas, from strategic consulting to training.</p>
-            <span className="cap-card__more">View capabilities</span>
+          <Link to="/what-we-do" className="cap-card">
+            <h3>What We Do</h3>
+            <p>Five practice areas, from strategic communications to research.</p>
+            <span className="cap-card__more">View what we do</span>
           </Link>
-          <Link to="/government" className="cap-card">
-            <h3>For government buyers</h3>
-            <p>Contracting information, capability statement and contacts.</p>
+          <Link to="/who-we-are" className="cap-card">
+            <h3>Who We Are</h3>
+            <p>Mission, leadership, clients and qualifications.</p>
             <span className="cap-card__more">View page</span>
           </Link>
           <Link to="/contact" className="cap-card">
             <h3>Contact</h3>
             <p>Tell us what you are trying to move forward.</p>
-            <span className="cap-card__more">Start a conversation</span>
+            <span className="cap-card__more">Contact us</span>
           </Link>
         </div>
       </section>

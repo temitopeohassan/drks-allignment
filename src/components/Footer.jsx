@@ -26,10 +26,10 @@ export default function Footer() {
               />
             </Link>
             <p>
-              DRKS Alignment LLC exists to help organizations close the gap
-              between strategy and execution. We bring structure to complexity,
-              clarity to priorities and alignment to the people and processes
-              responsible for delivering results.
+              DRKS Alignment LLC exists to make it easier for people to find,
+              understand and use information that leads to better health. We
+              bring communications, digital technology, technical assistance,
+              training and research together around that goal.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function Footer() {
 
             <p style={{ marginTop: 22 }}>
               <Link to="/contact" className="btn btn--gold">
-                Start a conversation
+                Contact Us
               </Link>
             </p>
           </div>
@@ -111,11 +111,11 @@ export default function Footer() {
             © {new Date().getFullYear()} {company.legalName}. {company.tagline}
           </span>
           <span>
-            <Link to="/government">Government buyers</Link>
+            <Link to="/who-we-are">Who we are</Link>
             {"  ·  "}
-            <Link to="/partners">Partners</Link>
+            <Link to="/join-our-team">Careers</Link>
             {"  ·  "}
-            <Link to="/careers">Careers</Link>
+            <Link to="/terms-service">Terms of Service</Link>
           </span>
         </div>
       </div>

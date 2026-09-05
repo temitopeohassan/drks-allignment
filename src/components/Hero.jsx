@@ -11,21 +11,21 @@ import heroResults from "../assets/hero-results.jpg";
 const slides = [
   {
     image: heroStrategy,
-    caption: "Strategy",
-    headline: "Strategy Aligned. Execution Focused. Results Driven.",
-    body: "DRKS Alignment LLC helps organizations turn strategic priorities into coordinated action, stronger operations and measurable results.",
+    caption: "Knowledge Improves Lives",
+    headline: "Knowledge Improves Lives.",
+    body: "DRKS Alignment LLC helps people find, understand and use the evidence-based information that leads to better health.",
   },
   {
     image: heroAlignment,
-    caption: "Alignment",
-    headline: "Where Strategy Becomes Execution.",
-    body: "We bring strategy, people, processes and priorities into alignment so organizations can move forward with clarity and confidence.",
+    caption: "Communications, Technology, Research",
+    headline: "Evidence, Made Clear, Engaging and Accessible.",
+    body: "We bring communications, digital technology, technical assistance, training and research together around a single goal: information people can actually use.",
   },
   {
     image: heroResults,
-    caption: "Results",
-    headline: "Align Your Strategy. Accelerate Your Results.",
-    body: "DRKS Alignment LLC provides strategic and operational support designed to help organizations navigate complexity and execute what matters most.",
+    caption: "Human-Centered, Outcome-Focused",
+    headline: "Human-Centered. Evidence-Based. Outcome-Focused.",
+    body: "DRKS Alignment LLC designs health communications and digital experiences around the people who depend on them.",
   },
 ];
 
@@ -76,10 +76,10 @@ export default function Hero() {
         <p className="hero__body">{active.body}</p>
         <div className="hero__actions">
           <Link to="/contact" className="btn btn--gold">
-            Start a conversation
+            Contact Us
           </Link>
-          <Link to="/capabilities" className="btn btn--ghost">
-            Explore our capabilities
+          <Link to="/what-we-do" className="btn btn--ghost">
+            Explore What We Do
           </Link>
         </div>
 

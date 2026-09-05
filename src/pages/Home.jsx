@@ -3,111 +3,165 @@ import Hero from "../components/Hero";
 import Arc from "../components/Arc";
 import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
-import { capabilities } from "../data/capabilities";
-import { insights } from "../data/insights";
-import { audiences, company, framework, whyDrks } from "../data/site";
+import { services } from "../data/services";
+import { caseStudies } from "../data/impact";
+import { audiences, company, community, homepageStats } from "../data/site";
+import { primaryLeader } from "../data/leadership";
 
 export default function Home() {
   return (
     <>
       <Seo
-        title="DRKS Alignment LLC | Strategy. Alignment. Results."
-        description="DRKS Alignment LLC helps organizations align strategy, people, processes and execution to achieve meaningful results."
+        title="DRKS Alignment LLC | Knowledge Improves Lives"
+        description="DRKS Alignment LLC helps people find, understand and use the evidence-based information that leads to better health, through communications, digital technology, technical assistance, training and research."
       />
       <Hero />
 
-      {/* Trust positioning */}
+      {/* Mission */}
       <section className="section">
         <div className="shell split">
           <div>
             <Arc />
-            <h2>Built around a simple principle: alignment creates momentum.</h2>
+            <h2>{company.coreIdea}</h2>
           </div>
           <div>
             <p className="lede">{company.positioning}</p>
             <p>
-              We work with government buyers, prime contractors, corporate
-              leadership teams and mission-driven institutions. The engagement
-              changes; the discipline does not. We start with what leadership is
-              actually trying to achieve, find where the organization is pulling
-              against itself, and stay involved through delivery.
+              We work with federal health agencies, government program
+              leaders, healthcare and public health organizations, nonprofits
+              and foundations, and science and research organizations. The
+              audience changes; the discipline does not — start with what
+              they need to know, then make it clear, engaging and accessible.
             </p>
-            <Link to="/about/who-we-are" className="btn btn--outline">
+            <Link to="/who-we-are" className="btn btn--outline">
               Who we are
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Core capabilities */}
+      {/* What We Do */}
       <section className="section section--tint">
         <div className="shell">
-          <span className="label">Core capabilities</span>
+          <span className="label">What we do</span>
           <h2 style={{ maxWidth: "22ch" }}>
-            Six practice areas, one continuous thread.
+            Five practice areas, one continuous thread.
           </h2>
           <div className="grid-3" style={{ marginTop: 44 }}>
-            {capabilities.map((capability) => (
+            {services.map((service) => (
               <Link
-                key={capability.slug}
-                to={`/capabilities/${capability.slug}`}
+                key={service.slug}
+                to={`/what-we-do/${service.slug}`}
                 className="cap-card"
               >
-                <h3>{capability.name}</h3>
-                <p>{capability.description}</p>
-                <span className="cap-card__more">View capability</span>
+                <h3>{service.name}</h3>
+                <p>{service.description}</p>
+                <span className="cap-card__more">View service</span>
               </Link>
             ))}
           </div>
+          <p style={{ marginTop: 40 }}>
+            <Link to="/what-we-do" className="btn btn--outline">
+              Explore What We Do
+            </Link>
+          </p>
         </div>
       </section>
 
-      {/* Framework — a genuine sequence */}
-      <section className="section section--navy">
+      {/* Featured Work */}
+      <section className="section">
         <div className="shell">
-          <span className="label">The DRKS framework</span>
-          <h2 style={{ maxWidth: "24ch", marginBottom: 40 }}>
-            Strategy sets direction. Alignment carries it. Results prove it.
+          <span className="label">Featured work</span>
+          <h2 style={{ maxWidth: "24ch" }}>
+            Evidence that the information reached people.
           </h2>
-          <div className="framework">
-            {framework.map((step) => (
-              <div className="framework__step" key={step.title}>
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-              </div>
+          <div className="grid-3" style={{ marginTop: 44 }}>
+            {caseStudies.slice(0, 3).map((item) => (
+              <Link
+                key={item.slug}
+                to={`/our-impact/${item.slug}`}
+                className="cap-card"
+              >
+                <h3>{item.title}</h3>
+                <p className="pending">{item.client}</p>
+                <span className="cap-card__more">Read case study</span>
+              </Link>
             ))}
           </div>
+          <p style={{ marginTop: 40 }}>
+            <Link to="/our-impact" className="btn btn--outline">
+              See Our Impact
+            </Link>
+          </p>
         </div>
       </section>
 
-      {/* Why DRKS */}
-      <section className="section">
+      {/* Who We Are */}
+      <section className="section section--navy">
         <div className="shell split">
           <div>
             <Arc />
-            <h2>Why organizations bring us in.</h2>
-            <p className="lede">
-              Usually because the plan is sound and the delivery is not, and
-              nobody inside the organization has the standing to say why.
-            </p>
+            <h2>Who we are</h2>
+            <p className="lede">{company.mission}</p>
           </div>
-          <div className="grid-2">
-            {whyDrks.map((reason) => (
-              <div className="reason" key={reason.title}>
-                <h3>{reason.title}</h3>
-                <p>{reason.description}</p>
-              </div>
-            ))}
+          <div>
+            <p>{company.vision}</p>
+            <Link to="/who-we-are" className="btn btn--gold">
+              Meet Our Team
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Audiences */}
+      {/* Company statistics */}
+      <section className="section">
+        <div className="shell">
+          <span className="label">By the numbers</span>
+          <div className="grid-2" style={{ marginTop: 32 }}>
+            {homepageStats.map((stat) => (
+              <div className="reason" key={stat.label}>
+                <h3 className={stat.value.startsWith("[") ? "pending" : undefined}>
+                  {stat.value}
+                </h3>
+                <p>{stat.label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="field__hint" style={{ marginTop: 8 }}>
+            Figures are published only once verified by DRKS.
+          </p>
+        </div>
+      </section>
+
+      {/* Community giving */}
       <section className="section section--tint">
+        <div className="shell split">
+          <div>
+            <Arc />
+            <h2>Community giving</h2>
+            <p className="lede">{community.description}</p>
+          </div>
+          <div className="panel">
+            <span className="label">Community partners</span>
+            {community.organizations.length === 0 ? (
+              <p className="pending">[VERIFY — named community partners pending confirmation]</p>
+            ) : (
+              <ul className="service-list">
+                {community.organizations.map((org) => (
+                  <li key={org}>{org}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Who we serve */}
+      <section className="section">
         <div className="shell">
           <span className="label">Who we serve</span>
           <h2 style={{ maxWidth: "24ch" }}>
-            Four audiences, each with a different first question.
+            Six audiences, each with a different first question.
           </h2>
           <div className="grid-2" style={{ marginTop: 44 }}>
             {audiences.map((audience) => (
@@ -125,84 +179,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Government + partner CTA */}
-      <section className="section">
-        <div className="shell grid-2">
-          <div className="panel">
-            <span className="label">For government buyers</span>
-            <h3>A responsive partner for public and institutional missions.</h3>
-            <p style={{ color: "var(--muted)" }}>
-              Capability statement, contracting details and points of contact,
-              organized the way an evaluator reads them.
-            </p>
-            <Link to="/government" className="btn btn--outline">
-              Discuss a requirement
-            </Link>
-          </div>
-          <div className="panel">
-            <span className="label">For prime contractors</span>
-            <h3>Complementary capability with responsive leadership.</h3>
-            <p style={{ color: "var(--muted)" }}>
-              Teaming and subcontracting support for primes who need reliable
-              delivery on strategy, program and administrative scopes.
-            </p>
-            <Link to="/partners" className="btn btn--outline">
-              Partner with DRKS
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership */}
+      {/* Join Our Team */}
       <section className="section section--tint">
         <div className="shell split">
           <div>
             <Arc />
-            <h2>Leadership</h2>
+            <h2>Join our team</h2>
             <p className="lede">
-              Leadership names, biographies, credentials and photographs are
-              supplied by DRKS and published only after verification.
+              Mission-driven, collaborative work with flexible scheduling and
+              a national network of experts.
             </p>
-            <Link to="/about/ceo" className="btn btn--outline">
-              Meet the CEO
-            </Link>
           </div>
-          <div className="leader">
-            <div className="leader__photo">[LEADERSHIP PHOTO]</div>
-            <div>
-              <h3>[LEADER NAME]</h3>
-              <p style={{ color: "var(--muted)", marginBottom: 12 }}>[TITLE]</p>
-              <p style={{ color: "var(--muted)" }}>[LEADERSHIP BIO]</p>
-            </div>
+          <div>
+            <p>
+              We&apos;re always glad to hear from communications, technology,
+              research, training and technical-assistance specialists who
+              want to do work that improves lives.
+            </p>
+            <Link to="/join-our-team" className="btn btn--navy">
+              Join Our Team
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Insights preview */}
+      {/* CEO quote */}
       <section className="section">
         <div className="shell">
-          <span className="label">Insights</span>
-          <h2 style={{ maxWidth: "22ch" }}>
-            Notes on strategy, alignment and getting work delivered.
-          </h2>
-          <div className="grid-3" style={{ marginTop: 44 }}>
-            {insights.slice(0, 3).map((insight) => (
-              <Link
-                key={insight.slug}
-                to="/insights"
-                className="insight"
-              >
-                <span className="insight__cat">{insight.category}</span>
-                <h3>{insight.title}</h3>
-                <p>{insight.excerpt}</p>
+          <div className="leader">
+            <div className="leader__photo">
+              <img src={primaryLeader.photo} alt={primaryLeader.photoAlt} />
+            </div>
+            <div>
+              <h3>{primaryLeader.name}</h3>
+              <p style={{ color: "var(--muted)", marginBottom: 12 }}>
+                {primaryLeader.title}
+              </p>
+              <p style={{ color: "var(--muted)" }}>{primaryLeader.summary}</p>
+              <Link to="/who-we-are/leadership" className="cap-card__more">
+                Read the full biography
               </Link>
-            ))}
+            </div>
           </div>
-          <p style={{ marginTop: 40 }}>
-            <Link to="/insights" className="btn btn--outline">
-              Read all insights
-            </Link>
-          </p>
         </div>
       </section>
 

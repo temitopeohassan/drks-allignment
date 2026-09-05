@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import Arc from "./Arc";
 
 export default function CtaBand({
-  title = "Ready to align strategy with execution?",
+  title = "Ready to make information work harder for the people who need it?",
   body = "Tell us what you are trying to move forward. We will tell you plainly whether we are the right partner for it.",
   actions = [
-    { label: "Start a conversation", to: "/contact", variant: "btn--gold" },
-    { label: "Explore our capabilities", to: "/capabilities", variant: "btn--ghost" },
+    { label: "Contact Us", to: "/contact", variant: "btn--gold" },
+    { label: "Explore What We Do", to: "/what-we-do", variant: "btn--ghost" },
   ],
 }) {
   return (
