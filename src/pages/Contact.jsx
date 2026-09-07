@@ -166,25 +166,7 @@ export default function Contact() {
                   <a href={`mailto:${company.email}`}>{company.email}</a>
                 </dd>
               </div>
-              <div className="data-row">
-                <dt>Phone</dt>
-                <dd>
-                  <a href={`tel:${company.phone}`}>{company.phone}</a>
-                </dd>
-              </div>
-              <div className="data-row">
-                <dt>Headquarters</dt>
-                <dd className="pending">{company.headquarters}</dd>
-              </div>
-              <div className="data-row">
-                <dt>Service area</dt>
-                <dd className="pending">{company.serviceArea}</dd>
-              </div>
             </dl>
-            <p className="field__hint" style={{ marginTop: 18 }}>
-              This form currently validates and confirms in the browser. Connect
-              it to your email service or CRM endpoint before launch.
-            </p>
           </div>
         </div>
       </section>

@@ -6,9 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 React 18 + Vite marketing site for DRKS Alignment LLC (built from a "DRKS MCP brief"). Brand colors navy `#062961` / gold `#F7B916`, DM Serif Display for headings, Manrope for body text.
 
-- `src/pages/` — route pages (Home, Partners, About, Government, Capabilities, Insights, Careers, Contact, NotFound)
+- `src/pages/` — route pages (Home, WhatWeDo, WhoWeAre + Leadership, JoinOurTeam, Contact, NotFound)
 - `src/components/` — shared UI (Header, Hero, Footer, PageHead, CtaBand, Arc, Seo, ScrollToTop)
-- `src/data/` — **all site copy lives here** (site.js, capabilities.js, insights.js), not hardcoded in components
+- `src/data/` — **all site copy lives here** (site.js, services.js, leadership.js), not hardcoded in components
 - `src/styles/global.css` — design tokens defined at `:root`
 
 ## Commands
@@ -26,8 +26,9 @@ The build output (`dist/`) is manually uploaded to a **LAMP/Apache server** — 
 
 ## Compliance note
 
-`src/data/site.js` contains `[BRACKETED]` placeholder values (founded date, headquarters, service area, contact info, UEI, CAGE, NAICS codes, certifications, contract vehicles) rendered in muted italic. Do not publish government credentials, certifications, contract vehicles, client names, past performance, or quantitative results in this file until they are verified by the team.
+The site publishes only verified copy. Unverified content — government credentials (UEI, CAGE, NAICS, SAM registration), certifications, client and partner names, past performance, community giving figures and any quantitative results — has been removed rather than shown as a `[VERIFY]`/`[BRACKETED]` placeholder. Do not reintroduce placeholder values into `src/data/`: add a field only once the team has confirmed the real value.
 
 ## Known gaps
 
 - The contact form (`src/pages/Contact.jsx`) only validates client-side — it is not wired to any backend, email service, or CRM.
+- Only `company.email` is published as contact detail. Phone, address, headquarters, service area and social profile links were removed with the placeholder cleanup; re-add them to `src/data/site.js` (and the Footer/Contact markup) once real values exist.

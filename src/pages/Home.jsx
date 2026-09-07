@@ -4,8 +4,7 @@ import Arc from "../components/Arc";
 import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
 import { services } from "../data/services";
-import { caseStudies } from "../data/impact";
-import { audiences, company, community, homepageStats } from "../data/site";
+import { audiences, company } from "../data/site";
 import { primaryLeader } from "../data/leadership";
 
 export default function Home() {
@@ -68,34 +67,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Work */}
-      <section className="section">
-        <div className="shell">
-          <span className="label">Featured work</span>
-          <h2 style={{ maxWidth: "24ch" }}>
-            Evidence that the information reached people.
-          </h2>
-          <div className="grid-3" style={{ marginTop: 44 }}>
-            {caseStudies.slice(0, 3).map((item) => (
-              <Link
-                key={item.slug}
-                to={`/our-impact/${item.slug}`}
-                className="cap-card"
-              >
-                <h3>{item.title}</h3>
-                <p className="pending">{item.client}</p>
-                <span className="cap-card__more">Read case study</span>
-              </Link>
-            ))}
-          </div>
-          <p style={{ marginTop: 40 }}>
-            <Link to="/our-impact" className="btn btn--outline">
-              See Our Impact
-            </Link>
-          </p>
-        </div>
-      </section>
-
       {/* Who We Are */}
       <section className="section section--navy">
         <div className="shell split">
@@ -109,49 +80,6 @@ export default function Home() {
             <Link to="/who-we-are" className="btn btn--gold">
               Meet Our Team
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Company statistics */}
-      <section className="section">
-        <div className="shell">
-          <span className="label">By the numbers</span>
-          <div className="grid-2" style={{ marginTop: 32 }}>
-            {homepageStats.map((stat) => (
-              <div className="reason" key={stat.label}>
-                <h3 className={stat.value.startsWith("[") ? "pending" : undefined}>
-                  {stat.value}
-                </h3>
-                <p>{stat.label}</p>
-              </div>
-            ))}
-          </div>
-          <p className="field__hint" style={{ marginTop: 8 }}>
-            Figures are published only once verified by DRKS.
-          </p>
-        </div>
-      </section>
-
-      {/* Community giving */}
-      <section className="section section--tint">
-        <div className="shell split">
-          <div>
-            <Arc />
-            <h2>Community giving</h2>
-            <p className="lede">{community.description}</p>
-          </div>
-          <div className="panel">
-            <span className="label">Community partners</span>
-            {community.organizations.length === 0 ? (
-              <p className="pending">[VERIFY — named community partners pending confirmation]</p>
-            ) : (
-              <ul className="service-list">
-                {community.organizations.map((org) => (
-                  <li key={org}>{org}</li>
-                ))}
-              </ul>
-            )}
           </div>
         </div>
       </section>

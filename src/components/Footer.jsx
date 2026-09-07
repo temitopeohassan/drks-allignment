@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/drks-logo.jpeg";
-import { additionalLinks, company, quickLinks, socialLinks } from "../data/site";
-import { PinIcon, PhoneIcon, MailIcon, FacebookIcon, LinkedInIcon } from "./Icons";
-
-const socialIcons = {
-  facebook: FacebookIcon,
-  linkedin: LinkedInIcon,
-};
-
-const isPending = (value) => typeof value === "string" && value.startsWith("[");
+import { additionalLinks, company, quickLinks } from "../data/site";
+import { MailIcon } from "./Icons";
 
 export default function Footer() {
   return (
@@ -59,44 +52,10 @@ export default function Footer() {
             <h4>Contact</h4>
             <ul className="footer-contact-list">
               <li>
-                <PinIcon className="footer-icon" />
-                <span className={isPending(company.address) ? "pending" : undefined}>
-                  {company.address}
-                </span>
-              </li>
-              <li>
-                <PhoneIcon className="footer-icon" />
-                {isPending(company.phone) ? (
-                  <span className="pending">{company.phone}</span>
-                ) : (
-                  <a href={`tel:${company.phone}`}>{company.phone}</a>
-                )}
-              </li>
-              <li>
                 <MailIcon className="footer-icon" />
                 <a href={`mailto:${company.email}`}>{company.email}</a>
               </li>
             </ul>
-
-            <div className="footer-social">
-              {socialLinks.map((social) => {
-                const Icon = socialIcons[social.icon];
-                const pending = isPending(social.url);
-                return (
-                  <a
-                    key={social.label}
-                    href={pending ? "#" : social.url}
-                    className={pending ? "footer-social__link is-pending" : "footer-social__link"}
-                    aria-label={`DRKS Alignment LLC on ${social.label}`}
-                    title={pending ? `${social.label}: ${social.url}` : social.label}
-                    target={pending ? undefined : "_blank"}
-                    rel={pending ? undefined : "noreferrer"}
-                  >
-                    <Icon />
-                  </a>
-                );
-              })}
-            </div>
 
             <p style={{ marginTop: 22 }}>
               <Link to="/contact" className="btn btn--gold">
@@ -114,8 +73,6 @@ export default function Footer() {
             <Link to="/who-we-are">Who we are</Link>
             {"  ·  "}
             <Link to="/join-our-team">Careers</Link>
-            {"  ·  "}
-            <Link to="/terms-service">Terms of Service</Link>
           </span>
         </div>
       </div>

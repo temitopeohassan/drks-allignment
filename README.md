@@ -18,19 +18,18 @@ npm run preview
 src/
   assets/        drks-logo.jpeg (header + footer), hero-strategy/alignment/results.jpg
   components/    Header, Hero, Footer, PageHead, CtaBand, Arc, Seo, ScrollToTop
-  data/          site.js, capabilities.js, insights.js   <- all copy lives here
-  pages/         Home, Partners, About*, Government, Capabilities*, Insights, Careers, Contact
+  data/          site.js, services.js, leadership.js   <- all copy lives here
+  pages/         Home, WhatWeDo, WhoWeAre (+ Leadership), JoinOurTeam, Contact, NotFound
   styles/        global.css (design tokens at :root)
 ```
 
 ## Routes
 
-`/` · `/partners` · `/about` · `/about/who-we-are` · `/about/mission-statement` ·
-`/about/ceo` · `/government` · `/capabilities` · `/capabilities/:slug` ·
-`/insights` · `/careers` · `/contact`
+`/` · `/what-we-do` · `/what-we-do/:slug` · `/who-we-are` ·
+`/who-we-are/leadership` · `/join-our-team` · `/contact`
 
-Capability detail pages are generated from `src/data/capabilities.js`. Add an
-entry there and the card, route and page appear.
+Service detail pages are generated from `src/data/services.js`. Add an entry
+there and the card, route and page appear.
 
 ## Hero images
 
@@ -44,15 +43,15 @@ hover or focus, and hold still under `prefers-reduced-motion`.
 
 ## Before launch
 
-Every `[BRACKETED]` value is a placeholder, rendered in muted italic so it is
-visible in review. Replace in `src/data/site.js`:
+The site carries no placeholder copy: anything unverified was removed rather
+than published as a `[VERIFY]` value. What is not on the site yet, and can be
+added to `src/data/site.js` once the team confirms it:
 
-- founded, headquarters, serviceArea, email, phone
-- UEI, CAGE, NAICS codes, certifications, contract vehicles
-- Leadership name, title, bio, photo (`src/pages/About.jsx`, `src/pages/Home.jsx`)
+- phone, address, headquarters, service area, social profile URLs
+- government credentials (UEI, CAGE, NAICS, SAM registration) and certifications
+- client and partner names, past performance, community giving figures, statistics
 
-Per the brief: do not publish government credentials, certifications, contract
-vehicles, client names, past performance or quantitative results until verified.
+Per the brief: publish none of the above until verified.
 
 The contact form validates and confirms client-side only. Point it at your email
 service or CRM endpoint in `src/pages/Contact.jsx` before launch.

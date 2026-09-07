@@ -5,7 +5,6 @@ import Arc from "../components/Arc";
 import Seo from "../components/Seo";
 import NotFound from "./NotFound";
 import { services, getService } from "../data/services";
-import { caseStudies } from "../data/impact";
 
 export function WhatWeDoIndex() {
   return (
@@ -49,9 +48,6 @@ export function ServiceDetail() {
   if (!service) return <NotFound />;
 
   const others = services.filter((item) => item.slug !== slug).slice(0, 3);
-  const relatedCaseStudies = caseStudies.filter(
-    (item) => item.serviceSlug === slug
-  );
 
   return (
     <>
@@ -97,27 +93,6 @@ export function ServiceDetail() {
           </div>
         </div>
       </section>
-
-      {relatedCaseStudies.length > 0 && (
-        <section className="section section--tint">
-          <div className="shell">
-            <span className="label">Relevant case studies</span>
-            <div className="grid-3" style={{ marginTop: 28 }}>
-              {relatedCaseStudies.map((item) => (
-                <Link
-                  key={item.slug}
-                  to={`/our-impact/${item.slug}`}
-                  className="cap-card"
-                >
-                  <h3>{item.title}</h3>
-                  <p className="pending">{item.client}</p>
-                  <span className="cap-card__more">Read case study</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       <section className="section section--tint">
         <div className="shell">

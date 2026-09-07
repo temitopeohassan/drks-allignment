@@ -4,7 +4,7 @@ import CtaBand from "../components/CtaBand";
 import Arc from "../components/Arc";
 import Seo from "../components/Seo";
 import { brandPrinciples, company } from "../data/site";
-import { clients, qualifications, vehicleGroups } from "../data/credentials";
+import { services } from "../data/services";
 import { primaryLeader } from "../data/leadership";
 
 export default function WhoWeAre() {
@@ -12,7 +12,7 @@ export default function WhoWeAre() {
     <>
       <Seo
         title="Who We Are | DRKS Alignment LLC"
-        description="DRKS Alignment LLC's mission, philosophy, leadership, clients, contracting vehicles and organizational qualifications."
+        description="DRKS Alignment LLC's mission, philosophy, leadership and organizational qualifications."
       />
       <PageHead
         crumb="Who We Are"
@@ -69,67 +69,23 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="shell grid-3">
-          <Link to="/who-we-are/clients-and-partners" className="cap-card">
-            <h3>Clients &amp; Partners</h3>
-            <p>
-              The organizations we serve and the partners we team with, named
-              only with their consent.
-            </p>
-            {clients.length === 0 && (
-              <p className="pending">[VERIFY — client roster pending]</p>
-            )}
-            <span className="cap-card__more">See clients and partners</span>
-          </Link>
-          <Link to="/who-we-are/contract-vehicles" className="cap-card">
-            <h3>Contract Vehicles</h3>
-            <p>
-              Vehicles, past performance, NAICS codes and registration details
-              for contracting officers.
-            </p>
-            <p className="pending">
-              {vehicleGroups.length} vehicle groups — [VERIFY]
-            </p>
-            <span className="cap-card__more">See contract vehicles</span>
-          </Link>
-          <Link to="/who-we-are/community" className="cap-card">
-            <h3>Community</h3>
-            <p>
-              How we pair employee well-being with charitable activity in the
-              communities we serve.
-            </p>
-            <span className="cap-card__more">See our community work</span>
-          </Link>
-        </div>
-      </section>
-
       <section className="section section--navy">
         <div className="shell">
-          <span className="label">Organizational qualifications</span>
+          <span className="label">How that shows up in the work</span>
           <h2 style={{ maxWidth: "24ch", marginBottom: 24 }}>
-            Certifications and quality designations, verified before they&apos;re
-            published.
+            Five practices, brought to one goal.
           </h2>
           <dl>
-            <div className="data-row">
-              <dt>Small business designation</dt>
-              <dd className="pending">{qualifications.designation}</dd>
-            </div>
-            <div className="data-row">
-              <dt>CMMI maturity level</dt>
-              <dd className="pending">{qualifications.cmmiLevel}</dd>
-            </div>
-            {qualifications.iso.map((item) => (
-              <div className="data-row" key={item}>
-                <dt>ISO certification</dt>
-                <dd className="pending">{item}</dd>
+            {services.map((service) => (
+              <div className="data-row" key={service.slug}>
+                <dt>{service.name}</dt>
+                <dd>{service.description}</dd>
               </div>
             ))}
           </dl>
           <p style={{ marginTop: 28 }}>
-            <Link to="/who-we-are/contract-vehicles" className="btn btn--gold">
-              UEI, CAGE, NAICS and vehicles
+            <Link to="/what-we-do" className="btn btn--gold">
+              Explore What We Do
             </Link>
           </p>
         </div>
