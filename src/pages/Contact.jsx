@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Address from "../components/Address";
 import PageHead from "../components/PageHead";
 import Arc from "../components/Arc";
 import Seo from "../components/Seo";
@@ -164,6 +165,20 @@ export default function Contact() {
                 <dt>Email</dt>
                 <dd>
                   <a href={`mailto:${company.email}`}>{company.email}</a>
+                </dd>
+              </div>
+              <div className="data-row">
+                <dt>Phone</dt>
+                <dd>
+                  <a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`}>
+                    {company.phone}
+                  </a>
+                </dd>
+              </div>
+              <div className="data-row">
+                <dt>Address</dt>
+                <dd>
+                  <Address />
                 </dd>
               </div>
             </dl>

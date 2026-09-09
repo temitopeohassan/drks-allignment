@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import Address from "./Address";
 import logo from "../assets/drks-logo.jpeg";
 import { additionalLinks, company, quickLinks } from "../data/site";
-import { MailIcon } from "./Icons";
+import { MailIcon, PhoneIcon, PinIcon } from "./Icons";
 
 export default function Footer() {
   return (
@@ -51,6 +52,16 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Contact</h4>
             <ul className="footer-contact-list">
+              <li>
+                <PinIcon className="footer-icon" />
+                <Address />
+              </li>
+              <li>
+                <PhoneIcon className="footer-icon" />
+                <a href={`tel:${company.phone.replace(/[^+\d]/g, "")}`}>
+                  {company.phone}
+                </a>
+              </li>
               <li>
                 <MailIcon className="footer-icon" />
                 <a href={`mailto:${company.email}`}>{company.email}</a>

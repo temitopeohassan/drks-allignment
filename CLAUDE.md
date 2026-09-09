@@ -31,4 +31,4 @@ The site publishes only verified copy. Unverified content — government credent
 ## Known gaps
 
 - The contact form (`src/pages/Contact.jsx`) only validates client-side — it is not wired to any backend, email service, or CRM.
-- Only `company.email` is published as contact detail. Phone, address, headquarters, service area and social profile links were removed with the placeholder cleanup; re-add them to `src/data/site.js` (and the Footer/Contact markup) once real values exist.
+- `company.email`, `company.phone` and `company.address` are published as verified contact detail, on the Footer and the Contact page. Headquarters, service area and social profile links are still missing — they were removed with the placeholder cleanup; re-add them to `src/data/site.js` (and the Footer/Contact markup) once real values exist.
