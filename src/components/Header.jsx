@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/drks-logo.jpeg";
+import logo from "../assets/drks-logo.png";
 import { navigation } from "../data/site";
 
 function NavItem({ item }) {
@@ -75,11 +75,11 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="shell site-header__inner">
-        <Link to="/" className="brand" aria-label="DRKS Alignment LLC — home">
+        <Link to="/" className="brand" aria-label="DRSQ Oasis LLC — home">
           <img
             className="brand__logo"
             src={logo}
-            alt="DRKS Alignment LLC — Strategy. Alignment. Results."
+            alt="DRSQ Oasis LLC — Strategy. Alignment. Results."
             width="785"
             height="910"
           />

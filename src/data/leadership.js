@@ -1,8 +1,8 @@
-// Leadership. Supplied and verified by DRKS Alignment LLC.
+// Leadership. Supplied and verified by DRSQ Oasis LLC.
 //
 // Unlike src/data/credentials.js, the content here is confirmed and publishable
 // as written. Anything added later — a second leader, an award, a board seat —
-// follows the same rule: it goes live only once DRKS confirms it.
+// follows the same rule: it goes live only once DRSQ confirms it.
 
 export const leaders = [
   {
@@ -11,18 +11,18 @@ export const leaders = [
     title: "President and Chief Executive Officer",
     strapline: "Executive Leader · Entrepreneur · Strategic Business Advisor",
     photo: "/ceo.jpg",
-    photoAlt: "Dr. Dhalia K-Sanni, President and Chief Executive Officer of DRKS Alignment LLC",
+    photoAlt: "Dr. Dhalia K-Sanni, President and Chief Executive Officer of DRSQ Oasis LLC",
 
     // Short pull-quote used on the homepage.
     summary:
       "More than 20 years across healthcare operations, financial management, regulatory compliance, management consulting, information technology and business development — translating complex operational, financial and regulatory requirements into practical strategies that strengthen organizational performance.",
 
     bio: [
-      "Dr. Dhalia K-Sanni is an accomplished executive, entrepreneur and strategic business leader with more than 20 years of experience spanning healthcare operations, financial management, regulatory compliance, management consulting, information technology and business development. She is the President and CEO of DRKS Alignment LLC, a women-owned minority small business providing innovative consulting, management, technology, administrative, financial and facilities support solutions to government and private-sector organizations.",
+      "Dr. Dhalia K-Sanni is an accomplished executive, entrepreneur and strategic business leader with more than 20 years of experience spanning healthcare operations, financial management, regulatory compliance, management consulting, information technology and business development. She is the President and CEO of DRSQ Oasis LLC, a women-owned minority small business providing innovative consulting, management, technology, administrative, financial and facilities support solutions to government and private-sector organizations.",
       "Throughout her career, Dr. K-Sanni has built a reputation for translating complex operational, financial and regulatory requirements into practical strategies that strengthen organizational performance.",
-      "In addition to leading DRKS Alignment LLC, Dr. K-Sanni serves as President and Director of Operations for Eastside Bariatric and General Surgery, where she directs enterprise strategy and operating priorities across clinical, administrative, financial and growth functions. Her leadership there has focused on strengthening financial controls, standardizing workflows, improving performance oversight, supporting regulatory compliance and building the operational infrastructure necessary for sustainable growth.",
+      "In addition to leading DRSQ Oasis LLC, Dr. K-Sanni serves as President and Director of Operations for Eastside Bariatric and General Surgery, where she directs enterprise strategy and operating priorities across clinical, administrative, financial and growth functions. Her leadership there has focused on strengthening financial controls, standardizing workflows, improving performance oversight, supporting regulatory compliance and building the operational infrastructure necessary for sustainable growth.",
       "Her professional background also includes senior financial and accounting roles with Mercedes-Benz USA, MDRC and General Motors, where she developed extensive experience in financial reporting, budgeting, revenue recognition, audit readiness, compliance, multinational finance and performance analysis. Earlier in her career, she worked in the legal sector in the United Kingdom, gaining valuable experience supporting senior leadership and working within legal and regulatory frameworks.",
-      "Through DRKS Alignment LLC, Dr. K-Sanni brings together her multidisciplinary experience to help organizations improve operations, manage complex initiatives, strengthen financial and administrative processes and deliver high-quality services. Driven by excellence, disciplined execution and customer satisfaction, she is committed to helping public- and private-sector organizations achieve sustainable growth, operational efficiency and measurable results.",
+      "Through DRSQ Oasis LLC, Dr. K-Sanni brings together her multidisciplinary experience to help organizations improve operations, manage complex initiatives, strengthen financial and administrative processes and deliver high-quality services. Driven by excellence, disciplined execution and customer satisfaction, she is committed to helping public- and private-sector organizations achieve sustainable growth, operational efficiency and measurable results.",
     ],
 
     expertise: [
@@ -39,7 +39,7 @@ export const leaders = [
     roles: [
       {
         title: "President and Chief Executive Officer",
-        organization: "DRKS Alignment LLC",
+        organization: "DRSQ Oasis LLC",
       },
       {
         title: "President and Director of Operations",

@@ -10,7 +10,7 @@ export function WhatWeDoIndex() {
   return (
     <>
       <Seo
-        title="What We Do | DRKS Alignment LLC"
+        title="What We Do | DRSQ Oasis LLC"
         description="Strategic communications, digital technology, technical assistance, training, and research and evaluation for health-focused missions."
       />
       <PageHead
@@ -52,7 +52,7 @@ export function ServiceDetail() {
   return (
     <>
       <Seo
-        title={`${service.name} | DRKS Alignment LLC`}
+        title={`${service.name} | DRSQ Oasis LLC`}
         description={service.description}
       />
       <PageHead

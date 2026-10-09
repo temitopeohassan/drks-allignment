@@ -31,13 +31,13 @@ export default function JoinOurTeam() {
   return (
     <>
       <Seo
-        title="Join Our Team | DRKS Alignment LLC"
-        description="Work with DRKS Alignment LLC on health communications, digital technology, technical assistance, training and research and evaluation."
+        title="Join Our Team | DRSQ Oasis LLC"
+        description="Work with DRSQ Oasis LLC on health communications, digital technology, technical assistance, training and research and evaluation."
       />
       <PageHead
         crumb="Join Our Team"
         title="Mission-driven work, built around flexibility."
-        intro="DRKS Alignment LLC brings together communications, technology, research, training and technical-assistance specialists around a shared goal: knowledge that improves lives."
+        intro="DRSQ Oasis LLC brings together communications, technology, research, training and technical-assistance specialists around a shared goal: knowledge that improves lives."
       />
 
       <section className="section">
@@ -90,7 +90,7 @@ export default function JoinOurTeam() {
           </p>
           <p style={{ marginTop: 28 }}>
             <a
-              href={`mailto:${company.email}?subject=Careers%20—%20DRKS%20Alignment%20LLC`}
+              href={`mailto:${company.email}?subject=Careers%20—%20DRSQ%20Oasis%20LLC`}
               className="btn btn--navy"
             >
               Send your résumé
@@ -100,7 +100,7 @@ export default function JoinOurTeam() {
       </section>
 
       <CtaBand
-        title="Have questions about working with DRKS?"
+        title="Have questions about working with DRSQ?"
         body="Tell us what you'd like to know about roles, flexibility or our culture."
         actions={[
           { label: "Contact Us", to: "/contact", variant: "btn--gold" },

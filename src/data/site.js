@@ -1,5 +1,5 @@
 export const company = {
-  legalName: "DRKS Alignment LLC",
+  legalName: "DRSQ Oasis LLC",
   tagline: "Strategy. Alignment. Results.",
   coreIdea: "Knowledge improves lives.",
   address: [
@@ -8,7 +8,7 @@ export const company = {
     "Ste B9 #616,",
     "Lilburn, GA 30047",
   ],
-  email: "info@drks-allignment-llc.com",
+  email: "info@drsqoasis.com",
   phone: "(470) 546 0052",
   positioning:
     "A health-focused communications, technology, research, training and technical-assistance partner that turns evidence-based information into clear, engaging, accessible experiences.",

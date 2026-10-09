@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // Photos: Unsplash License (free for commercial use, no attribution required).
 // hero-strategy.jpg / hero-alignment.jpg by Vitaly Gariev (@silverkblack),
-// hero-results.jpg by Ambre Estève (@ambresteve). Swap for real DRKS
+// hero-results.jpg by Ambre Estève (@ambresteve). Swap for real DRSQ
 // photography when available (see README pre-launch checklist).
 import heroStrategy from "../assets/hero-strategy.jpg";
 import heroAlignment from "../assets/hero-alignment.jpg";
@@ -13,7 +13,7 @@ const slides = [
     image: heroStrategy,
     caption: "Knowledge Improves Lives",
     headline: "Knowledge Improves Lives.",
-    body: "DRKS Alignment LLC helps people find, understand and use the evidence-based information that leads to better health.",
+    body: "DRSQ Oasis LLC helps people find, understand and use the evidence-based information that leads to better health.",
   },
   {
     image: heroAlignment,
@@ -25,7 +25,7 @@ const slides = [
     image: heroResults,
     caption: "Human-Centered, Outcome-Focused",
     headline: "Human-Centered. Evidence-Based. Outcome-Focused.",
-    body: "DRKS Alignment LLC designs health communications and digital experiences around the people who depend on them.",
+    body: "DRSQ Oasis LLC designs health communications and digital experiences around the people who depend on them.",
   },
 ];
 

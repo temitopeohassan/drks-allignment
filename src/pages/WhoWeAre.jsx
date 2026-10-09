@@ -11,8 +11,8 @@ export default function WhoWeAre() {
   return (
     <>
       <Seo
-        title="Who We Are | DRKS Alignment LLC"
-        description="DRKS Alignment LLC's mission, philosophy, leadership and organizational qualifications."
+        title="Who We Are | DRSQ Oasis LLC"
+        description="DRSQ Oasis LLC's mission, philosophy, leadership and organizational qualifications."
       />
       <PageHead
         crumb="Who We Are"
@@ -46,7 +46,7 @@ export default function WhoWeAre() {
             <Arc />
             <h2>Leadership</h2>
             <p className="lede">
-              DRKS is led by an executive who has spent more than 20 years
+              DRSQ is led by an executive who has spent more than 20 years
               turning complex operational, financial and regulatory
               requirements into strategies organizations can actually run.
             </p>
@@ -100,8 +100,8 @@ export function Leadership() {
   return (
     <>
       <Seo
-        title="Leadership | DRKS Alignment LLC"
-        description={`${primaryLeader.name}, ${primaryLeader.title} of DRKS Alignment LLC.`}
+        title="Leadership | DRSQ Oasis LLC"
+        description={`${primaryLeader.name}, ${primaryLeader.title} of DRSQ Oasis LLC.`}
       />
       <PageHead
         crumb={
@@ -110,7 +110,7 @@ export function Leadership() {
           </>
         }
         title="The people accountable for delivery."
-        intro="DRKS is led by an executive team that has carried operational, financial and regulatory responsibility inside the kinds of organizations we now serve."
+        intro="DRSQ is led by an executive team that has carried operational, financial and regulatory responsibility inside the kinds of organizations we now serve."
       />
 
       <section className="section">

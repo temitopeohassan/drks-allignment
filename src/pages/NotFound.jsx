@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 export default function NotFound() {
   return (
     <>
-      <Seo title="Page not found | DRKS Alignment LLC" />
+      <Seo title="Page not found | DRSQ Oasis LLC" />
       <PageHead
         crumb="Page not found"
         title="That page is not here."

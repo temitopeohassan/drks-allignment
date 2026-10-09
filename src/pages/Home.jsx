@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="DRKS Alignment LLC | Knowledge Improves Lives"
-        description="DRKS Alignment LLC helps people find, understand and use the evidence-based information that leads to better health, through communications, digital technology, technical assistance, training and research."
+        title="DRSQ Oasis LLC | Knowledge Improves Lives"
+        description="DRSQ Oasis LLC helps people find, understand and use the evidence-based information that leads to better health, through communications, digital technology, technical assistance, training and research."
       />
       <Hero />
 

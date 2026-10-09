@@ -47,8 +47,8 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="Contact | DRKS Alignment LLC"
-        description="Contact DRKS Alignment LLC to discuss a requirement, a partnership or a project."
+        title="Contact | DRSQ Oasis LLC"
+        description="Contact DRSQ Oasis LLC to discuss a requirement, a partnership or a project."
       />
       <PageHead
         crumb="Contact"

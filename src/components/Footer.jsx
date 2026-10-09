@@ -11,16 +11,16 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-col">
             <h4>About us</h4>
-            <Link to="/" className="footer-logo" aria-label="DRKS Alignment LLC — home">
+            <Link to="/" className="footer-logo" aria-label="DRSQ Oasis LLC — home">
               <img
                 src={logo}
-                alt="DRKS Alignment LLC — Strategy. Alignment. Results."
+                alt="DRSQ Oasis LLC — Strategy. Alignment. Results."
                 width="785"
                 height="910"
               />
             </Link>
             <p>
-              DRKS Alignment LLC exists to make it easier for people to find,
+              DRSQ Oasis LLC exists to make it easier for people to find,
               understand and use information that leads to better health. We
               bring communications, digital technology, technical assistance,
               training and research together around that goal.

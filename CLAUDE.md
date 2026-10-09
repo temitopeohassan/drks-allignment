@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-React 18 + Vite marketing site for DRKS Alignment LLC (built from a "DRKS MCP brief"). Brand colors navy `#062961` / gold `#F7B916`, DM Serif Display for headings, Manrope for body text.
+React 18 + Vite marketing site for DRSQ Oasis LLC (formerly DRKS Alignment LLC; built from a "DRSQ MCP brief"). Brand colors navy `#062961` / gold `#F7B916`, DM Serif Display for headings, Manrope for body text.
 
 - `src/pages/` — route pages (Home, WhatWeDo, WhoWeAre + Leadership, JoinOurTeam, Contact, NotFound)
 - `src/components/` — shared UI (Header, Hero, Footer, PageHead, CtaBand, Arc, Seo, ScrollToTop)

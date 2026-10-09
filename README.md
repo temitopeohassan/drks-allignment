@@ -1,6 +1,6 @@
-# DRKS Alignment LLC — Website
+# DRSQ Oasis LLC — Website
 
-React + Vite marketing site built from the DRKS MCP brief.
+React + Vite marketing site built from the DRSQ MCP brief.
 Navy `#062961` / gold `#F7B916`, DM Serif Display headings, Manrope body.
 
 ## Run it
@@ -37,7 +37,7 @@ there and the card, route and page appear.
 stock photography (Unsplash License — free for commercial use, no attribution
 required; credits in `src/components/Hero.jsx`), standing in for the
 leadership / strategy-session photography called for in the brief. Replace
-with real DRKS photography by dropping files into `src/assets/` and updating
+with real DRSQ photography by dropping files into `src/assets/` and updating
 the imports in `src/components/Hero.jsx`. Slides rotate every 7s, pause on
 hover or focus, and hold still under `prefers-reduced-motion`.
 
